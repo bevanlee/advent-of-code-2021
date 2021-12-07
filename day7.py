@@ -11,7 +11,7 @@ def part1(pos, target):
 
 def part2(pos, target):
     steps = abs(pos - target)
-    return (steps * (steps + 1)) // 2
+    return steps * (steps + 1) // 2
 
 
 def compute_total_fuel(crabs, target):

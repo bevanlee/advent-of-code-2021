@@ -35,8 +35,7 @@ def main():
     initial_state = [int(i) for i in input_string.split(',')]
     count = Counter(initial_state)
     fuel_costs = compute_fuels(count)
-    min_pos = min(fuel_costs, key=fuel_costs.get)
-    print(fuel_costs[min_pos])
+    print(min(fuel_costs.values()))
 
 
 if __name__ == '__main__':
